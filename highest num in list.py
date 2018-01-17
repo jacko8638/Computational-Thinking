@@ -1,6 +1,6 @@
 def findHighest(list):
     if len(list) == 0:
-        return "the list is empty"
+        return "THE LIST IS EMPTY!!!! ARE YOU HAPPY NOW?!"
     else:
         high = list[0]
         for num in list:

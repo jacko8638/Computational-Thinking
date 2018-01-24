@@ -12,5 +12,5 @@ def findDivSeven(inputList):
         else:
            return outputList
 
-intList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+intList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,123,45678,890]
 print(findDivSeven(intList))

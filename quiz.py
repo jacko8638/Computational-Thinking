@@ -37,7 +37,7 @@ def question1():
         elif answer == "b":
             QIClaxon = "ON"
             #corrects user who thinks silicon valley is better than IT Crowd
-            print("Thats definatly wrong, for that answer your getting two negative points")
+            print("That's definitely wrong, for that answer your getting two negative points")
             #updates points
             totalpoints = totalpoints - 2
 

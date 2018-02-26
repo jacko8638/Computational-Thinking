@@ -8,7 +8,7 @@ def question1():
 
     #this prints the question and answers
     sleep(1)
-    print("what is the best IT related tv show")
+    print("what is the best computer science related tv show?")
     sleep(2)
     print("Is it:")
     sleep(1)
@@ -19,7 +19,7 @@ def question1():
     print("C: Mr Robot")
     sleep(1)
     print("D: </scorpion>")
-    sleep(1)
+    sleep(2)
 
     #this asks the user to input their answer
     answer = input("Your answer:")
@@ -64,6 +64,8 @@ QIClaxon = "OFF"
 #mainprogram
 print("Welcome to the quiz.")
 question1()
+sleep(1)
 print("Thank you for playing")
+sleep(1)
 #displays how many points they get
 print("Your score is: %d" % totalpoints)

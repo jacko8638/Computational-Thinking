@@ -1,37 +1,52 @@
 from time import sleep
 #subroutines
+
 def question1():
+    global totalpoints
     #A is the correct answer
-    print("question?")
+    #this prints the question and answers
+    sleep(1)
+    print("what is the best IT related tv show")
     sleep(2)
     print("Is it:")
     sleep(1)
-    print("A: answer"
-          "B: answer"
-          "C: answer"
-          "D: answer")
+    print("A: IT Crowd")
+    sleep(1)
+    print("B: Silicon Valley")
+    sleep(1)
+    print("C: Mr Robot")
+    sleep(1)
+    print("D: </scorpion>")
+    sleep(1)
+    #this asks the user to input their answer
     answer = input("Your answer:")
-    if len(answer) = 1 and answer.isalpha():
-        lower(answer)
-        if answer = "a":
+    #first if statement questions if answer is valid
+    if len(answer) == 1 and answer.isalpha():
+        #converts answer to always be lower case so it can be understood by if statement
+        answer.lower()
+        if answer == "a":
             print("Congrats, your answer is correct!")
-            totalCorrect = totalCorrect + 1
-            return totalCorrect
+            #updates points
+            totalpoints = totalpoints + 1
+        elif answer == "b":
+            #corrects user who thinks silicon valley is better than IT Crowd
+            print("Thats definatly wrong, for that answer your getting two negative points")
+            #updates points
+            totalpoints = totalpoints - 2
         else:
             print("Oh no! Your answer was incorrect")
-            totalIncorrect = totalIncorrect + 1
-            return totalIncorrect
-            questionNext()
+            #updates points
+            totalpoints = totalpoints - 1
+    #calls next question
     else:
+        #gets user to re-enter answer if it wasnt a valid answer
         print("Sorry I didn't understand your answer, please try again")
         question1()
 
-def questionNext():
-    #same formula as first question but different question and answer
+#other questions are defined here
 
 #globals
-totalCorrect = 0
-totalIncorrect = 0
+totalpoints = 0
 
 
 
@@ -39,5 +54,5 @@ totalIncorrect = 0
 print("Welcome to the quiz.")
 question1()
 print("Thank you for playing")
-print("You have %d correct answers" % totalCorrect)
-print("You have %d incorrect answers" % totalIncorrect)
+#displays how many answers they got right and wrong
+print("Your score is %d" % totalpoints
